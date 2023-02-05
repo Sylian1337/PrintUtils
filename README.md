@@ -22,14 +22,22 @@ Print Utilities -> signed int64 printf:
 As shown above this makes it easy for programmers to simply write a function, then pass the text they want and the value and thats all, no need to remember formats for the types since Print Utilities handles that part for you.
 
 # What data types are currently supported?
+
   Int64 (both signed and unsigned)
+  
   Int32 (both signed and unsigned)
+  
   Float
+  
   Bool
+  
   Double
-  DWORD32 (Can be printed as hex if selected);
-  DWORD64 (Can be printed as hex if selected);
-  Uintptr_t (Can be printed as hex if selected);
+  
+  DWORD32 (Can be printed as hex if selected)
+  
+  DWORD64 (Can be printed as hex if selected)
+  
+  Uintptr_t (Can be printed as hex if selected)
 
 # How to use it?
 Its really simple!
