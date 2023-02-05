@@ -40,10 +40,40 @@ As shown above this makes it easy for programmers to simply write a function, th
   Uintptr_t (Can be printed as hex if selected)
 
 # How to use it?
-Its really simple!
 
-You include it like the the image below and you should be good to go!
+**NOTE: Before we begin you should know that this library only works on C++ 14 and up!**
 
-![image](https://user-images.githubusercontent.com/14792697/216839871-2c913a60-f916-4dcc-8de2-c7900ebbe9fb.png)
-NOTE: C++ 14 and up.
 
+1. Download the .rar file, open it and drag the folder called **"Includes"** inside your project solution dir.
+
+2. Go into Visual Studio and right click on your project, **(Highlighted yellow)**
+
+![include](https://user-images.githubusercontent.com/14792697/216845342-b42e8051-8535-4815-b162-ef1e5f071df6.PNG)
+
+3. Click on "Properties", again if you dont know which one it is look at the image below **(Highlighted in yellow)**
+
+![include](https://user-images.githubusercontent.com/14792697/216845457-7217b0fc-ad7e-4743-aeb4-510335e2c268.PNG)
+
+4. Click on "C/C++" **(Highlighted yellow)**, now copy this "$(SolutionDir)\Includes\Header" into the "Additional Include Directories" **(Highlighted yellow)**
+
+![include](https://user-images.githubusercontent.com/14792697/216845814-f17f897c-a5a9-4b6a-b5ee-a3f4fb8053cc.PNG)
+
+5. Next click on "Linker" **(Highlighted yellow)**, again copy this "$(SolutionDir)\Includes\Lib" into the "Additional Library Directories" **(Highlighted yellow)**
+
+![include](https://user-images.githubusercontent.com/14792697/216846094-f3c64dfb-5a29-4fbd-8f22-659458097463.PNG)
+
+6. Click at the left side of "Linker" to expaned it, now click on "Input" **(Highlighted yellow)**, now copy this "PrintHelperLib.lib" into "Additional Dependencies" **(Highlighted yellow)**
+
+![include](https://user-images.githubusercontent.com/14792697/216846421-d82e7e1a-8220-49db-8187-f78ae6d5b387.PNG)
+
+7. Click on "Apply" **(Highlighted yellow)** and then "OK"
+
+![include](https://user-images.githubusercontent.com/14792697/216846665-a07ad2eb-1d2a-486a-a094-be9e917cc73c.PNG)
+
+8. Last step is to include the header file by writing this at the top of your "#include <PrintUtils.h>"
+
+![include](https://user-images.githubusercontent.com/14792697/216846999-736d77a1-0754-45f8-9223-99ea87ec78bc.PNG)
+
+9. Try writing "PrintUtils::", if you get a list of different functions then congratulations, if not you made a mistake somewhere, go back and try again.
+
+![include](https://user-images.githubusercontent.com/14792697/216847108-03951d16-d6b7-4dd9-abf8-c2226c7a3d34.PNG)
